@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onlineticketbooking</title>
+</head>
+<body>
+    <style>
+
+        body{
+            background-image: url(world.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        *{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    
+    color: black;
+    padding: 20px;
+}
+
+li{
+    display: inline;
+    color:blue;
+    cursor: pointer;
+}
+ul{
+    display: inline;
+    margin-left: 50%;
+
+}
+
+li:hover{
+    color: rgb(72, 64, 146);
+}
+h1{
+    display: inline;
+}
+
+         
+        .booking-form {
+    width: 300px;
+    margin:auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.booking-form h1 {
+    text-align: center;
+}
+.booking-form form {
+    display: flex;
+    flex-direction:column;
+}
+.booking-form label {
+    margin-top: 10px;
+}
+.booking-form input,
+.booking-form select,
+.booking-form button {
+    padding: 10px;
+    margin-top: 5px;
+}
+.booking-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+    </style>
+    <nav>
+        <h1>RouteRush <img src="LOGO.jpg" style="width: 50px; height: 50px;" align="center"></h1>
+        <ul>
+            <li>HOME |</li>
+            
+            <li>ABOUT AS |</li>
+            <li>CONTACT AS |</li>
+        </ul>
+    </nav>
+    
+
+</div>
+
+    <form>
+        <div class="booking-form" style="margin-left: 30px; padding-top: 80px; ">
+            <h1 style="margin-left: 100px; padding: 0px; margin-bottom: 40px;">FLIGHT </h1> 
+              
+                <BR>
+                
+                <label for="origin"><b>ORIGIN</b></label>
+                      <select>
+                        <optgroup>
+                            <option value="mumbai">mumbai</option>
+                            <option value="banglore">banglore</option>
+                            <option value="delhi">delhi</option>
+                        </optgroup>
+                      </select>    <BR><BR>
+                      
+                      <label for="destination"><b>DESTINATION:</b></label>
+                      <select>
+                        <optgroup>
+                            <option value="mumbai">mumbai</option>
+                            <option value="banglore">banglore</option>
+                            <option value="delhi">delhi</option>
+                        </optgroup>
+                      </select> <BR><BR>
+                                                                                
+                                                                               
+                      <label for="passengers:"><b>NO OF PASSENGERS:</b></label>
+                      <input type="number" id="passengers" name="passengers" required>   <BR><BR>
+                      
+                      <label for="departure"><b>DEPARTURE:</b></label>
+                      <input type="date" id="departure" name="departure">    <BR><BR>
+
+                        <label for="return"><b>RETURN:</b></label>
+                      <input type="date" id="return" name="return">  
+                        <BR><BR>
+                            <label for="class"><b>CLASS:</b></label>
+                      <select>
+                        <option value="economy">ECONOMY</option>
+                        <option value="business">BUSINESS</option>
+                      </select> 
+                                                               
+                        <BR>                                                      
+                    <button type="button" onclick="window.location.href='payment.html'">PROCEED TO PAYMENT</button>
+
+                  
+    </form>
+    
+</body>
+</html>

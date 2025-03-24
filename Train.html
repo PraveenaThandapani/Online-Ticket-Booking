@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Ticket Booking</title>
+    <style>
+        body {
+            background-image: url(train.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            color: black;
+            padding: 20px;
+        }
+        li {
+            display: inline;
+            color: blue;
+            cursor: pointer;
+        }
+        ul {
+            display: inline;
+            margin-left: 50%;
+        }
+        li:hover {
+            color: rgb(72, 64, 146);
+        }
+        h1 {
+            display: inline;
+        }
+        .booking-form {
+            width: 300px;
+            margin: auto;
+            border: 1px solid #ddd;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background: white;
+            margin-top: 50px;
+        }
+        .booking-form h1 {
+            text-align: center;
+        }
+        .booking-form label {
+            margin-top: 10px;
+            display: block;
+        }
+        .booking-form input,
+        .booking-form select,
+        .booking-form button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+        }
+        .booking-form button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h1>RouteRush <img src="LOGO.jpg" style="width: 50px; height: 50px;" align="center"></h1>
+        <ul>
+            <li>HOME |</li>
+            <li>ABOUT US |</li>
+            <li>CONTACT US |</li>
+        </ul>
+    </nav>
+
+    <div class="booking-form">
+        <h1>TRAIN TICKET</h1>
+        <form>
+            <label for="origin"><b>ORIGIN:</b></label>
+            <select>
+                <option value="chennai">Chennai</option>
+                <option value="bangalore">Bangalore</option>
+                <option value="delhi">Delhi</option>
+            </select>
+
+            <label for="destination"><b>DESTINATION:</b></label>
+            <select>
+                <option value="chennai">Chennai</option>
+                <option value="bangalore">Bangalore</option>
+                <option value="delhi">Delhi</option>
+            </select>
+
+            <label for="passengers"><b>NO OF PASSENGERS:</b></label>
+            <input type="number" id="passengers" name="passengers" required>
+
+            <label for="departure"><b>DEPARTURE DATE:</b></label>
+            <input type="date" id="departure" name="departure">
+
+            <label for="class"><b>CLASS:</b></label>
+            <select>
+                <option value="sleeper">Sleeper</option>
+                <option value="ac">AC</option>
+                <option value="general">General</option>
+            </select>
+
+           <button type="button" onclick="window.location.href='payment.html'">PROCEED TO PAYMENT</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
